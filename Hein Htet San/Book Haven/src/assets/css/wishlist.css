@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&family=Gochi+Hand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* color  */
+    --oxford-blue: #011638ff;
+    --silver: #cdcdcdff;
+    --honeydew: #dff8ebff;
+    --azul: #016fb9ff;
+    --yellow: #F9C54A ;
+    --gradient-blue: rgba(9,115 ,242 , 0.3);
+    --violet:#BC5BF8;
+    --placeholder :  #999;
+    --black: #333;
+    --input: #efefef;
+    --red : #FD3B3B;
+    --light-red: #FED7D7;
+
+    /* font family  */
+    --Gluten:  'Gluten', sans-serif;
+    --Gochi:  'Gochi Hand', sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    overflow: hidden;
+    position: relative;
+    background: url(../../icons/bgcurve2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+}
+.header h4{
+    font-family: var(--Gluten);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--azul);
+}
+
+/* item  */
+.item-wrapper{
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* cursor:all-scroll; */
+}
+.item-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.itembox{
+    width: 100%;
+    height: auto;
+    /* background: var(--gradient-blue); */
+}
+.itembox .img-box{
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    border: none;
+}
+.itembox h3{
+    font-family: var(--Gochi);
+    font-size: 28px;
+    position: relative;
+    font-weight: 500;
+    color: var(--azul);
+    z-index: 999;
+}
+.itembox h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: url(../../icons/underline.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 80px;
+    height: 15px;
+}
+.itembox small{
+    font-family: var(--Gochi);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--violet);
+}
+.itembox span{
+    font-family: var(--Gochi);
+    font-weight: 500;
+    color: var(--placeholder);
+    font-size: 24px;
+}
+.itembox span .price{
+    color: var(--black);
+}
+.itembox .cart{
+    font-family: var(--Gluten);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--placeholder);
+}
+.itembox .cart.active{
+    color: var(--yellow);
+}
+.itembox .bi-trash{
+    font-size: 22px;
+    color: var(--red);
+}
+
+.itembox .info{
+    font-family: var(--Gochi);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--input);
+}
+
+.back{
+    font-family: var(--Gochi);
+    font-size: 24px;
+    color: var(--placeholder);
+    text-decoration: none;
+}
+.back:hover{
+    color: var(--red);
+}
+
+ /* item box  */
+
+ .status{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Gochi);
+    font-size: 32px;
+    color: var(--placeholder);
+    text-align: center;
+ }

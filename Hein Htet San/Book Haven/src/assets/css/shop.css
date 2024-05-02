@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&family=Gochi+Hand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* color  */
+    --oxford-blue: #011638ff;
+    --silver: #cdcdcdff;
+    --honeydew: #dff8ebff;
+    --azul: #016fb9ff;
+    --yellow: #F9C54A ;
+    --gradient-blue: rgba(9,115 ,242 , 0.3);
+    --violet:#BC5BF8;
+    --placeholder :  #999;
+    --black: #333;
+    --input: #efefef;
+    --red : #FD3B3B;
+    --light-red: #FED7D7;
+
+    /* font family  */
+    --Gluten:  'Gluten', sans-serif;
+    --Gochi:  'Gochi Hand', sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: url(../../icons/bgcurve2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* navbar  */
+.navbar{
+    width: 100%;
+    height: 8vh;
+    /* background: #aaff00; */
+}
+.navwrapper{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .searchbar{
+    width: 100%;
+    /* height: 10vh; */
+    /* background: #000; */
+}
+.navbar .searchbar input{
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid var(--placeholder);
+    background: var(--input);
+    outline: none;
+    font-family: var(--Gochi);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    text-indent: 10%;
+}
+.navbar .searchbar input:focus{
+    border: none;
+    outline: 2px solid var(--azul);
+}
+.navbar .searchbar span{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 4px;
+    left: 2.5%;
+    color: var(--placeholder);
+}
+.categ{
+    border: none;
+    background: none;
+    width: auto;
+    font-size: 28px;
+    font-family: var(--Gochi);
+    color: var(--yellow);
+    border: none;
+    background: none;
+    z-index: 999;
+    position: relative;
+}
+.categ::before{
+    content: "";
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: -1;
+    background: url(../../icons/paint.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.categ:hover{
+    transform: scale(1.05);
+}
+/* end of nav  */
+
+/* phone search bar  */
+.searchbar{
+    width: 100%;
+    /* height: 10vh; */
+    /* background: #000; */
+}
+.searchbar input{
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background: var(--input);
+    outline: none;
+    font-family: var(--Gochi);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    text-indent: 10%;
+}
+.searchbar input:focus{
+    outline: 2px solid var(--azul);
+}
+.searchbar span{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 4px;
+    left: 2.5%;
+    color: var(--placeholder);
+}
+
+/* sub nav  */
+.sub-nav{
+    width: 100%;
+    height: 7vh;
+    /* background: #ff00ee; */
+}
+.sub-nav h4{
+    font-family: var(--Gluten);
+    font-weight: 500;
+    color: var(--azul);
+    font-size: 28px;
+}
+.profile, .heart, .shopping-cart, .truck    {
+    font-size: 17px;
+    color: var(--placeholder);
+    text-decoration: none;
+}
+.profile:hover, .heart:hover, .shopping-cart:hover, .truck:hover{
+    color: var(--black);
+}
+
+.listbtn{
+    border: none;
+    border-radius: 10px;
+    font-size: 26px;
+    color: var(--azul);
+    background: none;
+    cursor: pointer;
+}
+.link-list{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    height: 0px;
+    background: var(--input);
+    border-radius: 15px;
+    transition: height .4s ease-in-out;
+    z-index: 9999;
+    overflow: hidden;
+    display: none;
+}
+.link-list.active{
+    display: block;
+    height: 160px;
+}
+/* end of sub nav  */
+
+
+/* product  */
+.products{
+    width: 100%;
+    height: 84vh;
+    overflow-y: scroll;
+    /* background: #000;? */
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+
+.products-wrapper .image{
+    width: 150px;
+    height: 250px;
+    border: none;
+    border-radius: 10px;   
+    transition: .2s ease-in;
+}
+.products-wrapper .image:hover{
+    transform: scale(1.05);
+}
+/* end of product  */
+
+
+/* item  */
+.item .name{
+    text-decoration: none;
+    font-family: var(--Gochi);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--azul);
+}
+.item .price{
+    text-decoration: none;
+    font-family: var(--Gochi);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+}
+.item .wishlist, .item .cart{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--placeholder);
+}
+
+
+@media screen and (max-width: 420px) {
+    .products-wrapper .image{
+        width: 150px;
+        height: 250px;
+    }
+}
+
+
+/* category modal  */
+.cate-wrapper{
+    /* padding: 1rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    z-index: 9999999;
+    background: var(--gradient-blue);
+    transform: translateY(-100%);
+    transition: all .5s ease-in-out;
+}
+.cate-modal{
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid var(--input);
+    background: var(--oxford-blue);
+    border-radius: 10px;
+}
+.cate-modal a{
+    text-decoration: none;
+    font-family: var(--Gochi);
+    font-size: 22px;
+    color: var(--input);
+}
+.cate-modal a:hover{
+    color: var(--red);
+}

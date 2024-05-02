@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" href="./icons/svg/logo.svg">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="aside-bar d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-chevron-right"></i>
+                <a href="#home" class="mb-5">Home</a>
+                <a href="#category" class="mb-5">Category</a>
+                <a href="#about" class="mb-5">About us</a>
+                <a href="#contact" class="mb-5">Contact us</a>
+            </div>
+
+            <!-- <div class="bg-curve"><img src="./icons/bg.svg"  class="curve" alt=""></div> -->
+
+            <!-- navbar  -->
+            <div class="col-12 navbar d-flex align-items-center justify-content-between p-3 px-md-5 py-md-3">
+                <img src="./icons/svg/logotext.svg" class="logotext" alt="">
+                <nav class="d-none d-md-block">
+                    <a href="#home" class="me-5">Home</a>
+                    <a href="#category" class="me-5">Category</a>
+                    <a href="#about" class="me-5">About us</a>
+                    <a href="#contact" class="me-5">Contact us</a>
+                </nav>
+                <div class="d-block d-md-none">
+                    <button class="nav-aside-btn mb-3"><i class="bi bi-layout-sidebar-reverse"></i></button>
+                </div>
+            </div>
+            <!-- end of navbar  -->
+
+
+            <!-- home  -->
+            <div class="col-12" id="home">
+                <div class="row">
+                    <div class="order-1 order-md-0 col-12 col-md-6 px-5 home-content d-flex align-items-center justify-content-center">
+                        <div class="content book-content d-flex align-items-md-end align-items-start justify-content-center flex-column">
+                            <span>Welcome to</span>
+                            <h3 class="mb-3">Book Haven</h3>
+                            <p class="text-start text-md-end">
+                                Explore our diverse collection of books and embark on a literary journey like no other.
+                            </p>
+                            <a href="./template/loading.html" class="text-decoration-none text-center">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="order-0 order-md-1 col-12 col-md-6  d-flex align-items-center justify-content-center justify-content-md-start px-5 px-md-3 home-image">
+                        <img src="./icons/home.png" class="h-pic books" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end of home  -->
+            
+
+            <!-- explore  -->
+            <div class="col-12" id="category">
+                <div class="row">
+                    <div class="col-12 col-md-6  d-flex align-items-center justify-content-center px-5 px-md-3 explore-image ">
+                        <img src="./icons/category.png" class="h-pic category" alt="">
+                    </div>
+                    <div class="order-1 order-md-0 col-12 col-md-6 px-5 explore-content d-flex align-items-center justify-content-center">
+                        <div class="content category-content  d-flex align-items-start align-items justify-content-center flex-column">
+                            <h3 class="mb-3">Explore</h3>
+                            <p>
+                                Discover Book Categories for Easy Genre Exploration.
+                            </p>
+                            <a href="./template/loading.html" class="text-decoration-none text-center">Explore more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of explore  -->
+
+            <!-- about us  -->
+            <div class="col-12" id="about">
+                <div class="row">
+                    <div class="order-1 order-md-0 col-12 col-md-6 px-5 about-content d-flex align-items-center justify-content-center">
+                        <div class="content about-content d-flex align-items-md-end justify-content-md-end align-items-start flex-column">
+                            <h3 class="mb-3">About us</h3>
+                            <p class="text-start text-md-end">
+                                Passionate bookshop connecting readers with captivating stories. Discover, explore, and celebrate the joy of reading with us.
+                            </p>
+                            <a href="" class="text-decoration-none text-center">About us</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6  d-flex align-items-center justify-content-center justify-content-center px-5 px-md-3 about-image ">
+                        <img src="./icons/bookshop.png" class="h-pic about" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end of about us  -->
+
+            <!-- contact us  -->
+            <div class="col-12" id="contact">
+                <div class="row">
+                    <div class="col-12 col-md-6  d-flex align-items-center justify-content-md-end justify-content-center px-5 px-md-3 contact-image ">
+                        <img src="./icons/contact.png" class="h-pic contact" alt="">
+                    </div>
+                    <div class="order-1 order-md-0 col-12 col-md-6 px-5 contact-content d-flex align-items-center justify-content-center">
+                        <div class="content contact-content d-flex align-items-start align-items justify-content-center flex-column">
+                            <h3 class="mb-3">Contact us</h3>
+                            <p>
+                                Connect with us for inquiries, assistance, or feedback. We're here to help!
+                            </p>
+                            <a href="./template/contact.php" class="text-decoration-none text-center">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of contact us  -->
+
+            <!-- footer  -->
+            <div class="col-12 footer">
+                <div class="row px-3 px-md-5">
+                    <div class="footer-box p-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
+                        <div class="col-12 col-md-3 d-flex flex-column mb-3 mb-md-0 align-items-center justify-content-center flex-column">
+                            <img src="./icons/svg/logotext.svg" class="mb-2" alt="">
+                            <div class="footer-link">
+                                <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 d-flex align-items-center mb-3 mb-md-0 justify-content-center flex-column">
+                            <a href="#home">Home</a>
+                            <a href="#explore">Category</a>
+                            <a href="#about">About us</a>
+                            <a href="#contact">Contact us</a>
+                        </div>
+                        <div class="col-12 col-md-2 d-flex align-items-center mb-3 mb-md-0 justify-content-center flex-column">
+                            <a href="">Links</a>
+                            <a href="">Services</a>
+                            <a href="">Delivery</a>
+                        </div>
+                        <div class="col-12 col-md-2 d-flex align-items-center mb-3 mb-md-0 justify-content-center flex-column">
+                            <a href="">Science</a>
+                            <a href="">Fiction</a>
+                            <a href="">Non-fiction</a>
+                            <a href="">And more...</a>
+                        </div>
+                        <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-between flex-column">
+                            <span>Copyright - 2023</span>
+                            <span>All rights reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5"></div>
+            <!-- end of footer  -->
+
+        </div>
+    </div>
+
+    <script src="./assets/js/aside.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '30px',
+			duration: 2500,
+			delay: 400,
+        });
+
+        ScrollReveal().reveal('.book-content', {delay: 300, origin: 'left', distance: '30px'});
+        ScrollReveal().reveal('.books', {delay: 200, origin: 'right', distance: '30px'});
+
+        ScrollReveal().reveal('.category', {delay: 300, origin: 'left', distance: '30px'});
+        ScrollReveal().reveal('.category-content', {delay: 200, origin: 'right', distance: '30px'});
+
+        ScrollReveal().reveal('.about-content', {delay: 300, origin: 'left', distance: '30px'});
+        ScrollReveal().reveal('.about', {delay: 200, origin: 'right', distance: '30px'});
+
+        ScrollReveal().reveal('.contact', {delay: 300, origin: 'left', distance: '30px'});
+        ScrollReveal().reveal('.contact-content', {delay: 200, origin: 'right', distance: '30px'});
+
+        ScrollReveal().reveal('.footer-box', {delay: 200, origin: 'bottom', distance: '30px'});
+
+    </script>
+</body>
+</html>

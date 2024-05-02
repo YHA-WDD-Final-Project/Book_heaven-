@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&family=Gochi+Hand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* color  */
+    --oxford-blue: #011638ff;
+    --silver: #cdcdcdff;
+    --honeydew: #dff8ebff;
+    --azul: #016fb9ff;
+    --yellow: #F9C54A ;
+    --gradient-blue: rgba(9,115 ,242 , 0.3);
+    --violet:#BC5BF8;
+    --placeholder :  #999;
+    --black: #333;
+    --input: #efefef;
+    --red : #FD3B3B;
+    --light-red: #FED7D7;
+
+    /* font family  */
+    --Gluten:  'Gluten', sans-serif;
+    --Gochi:  'Gochi Hand', sans-serif;
+}
+
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../../icons/bgcurve2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+/* navbar  */
+.navbar{
+    width: 100%;
+    height: 17vh;
+    font-family: var(--Gochi);
+    /* background: green; */
+}
+.navbar h4{
+    font-size: 24px;
+    color: var(--azul);
+}
+/* navbar  */
+
+
+/* aside 
+ */
+.aside{
+    width: 100%;
+    height: 83vh;
+    border-right: 2px solid var(--input);
+    /* background-color: #BC5BF8; */
+}
+.aside-wrapper .span, .aside-wrapper span .span2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+    cursor: pointer;
+    font-family: var(--Gochi);
+}
+.span.active, span .span2.active{
+    color: var(--azul);
+}
+/* aside  */
+
+/* main  */
+.main{
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+    /* background: red; */
+}
+.main::-webkit-scrollbar{
+    display: none;
+}
+.main-navbar{
+    font-family: var(--Gochi);
+    font-size: 20px;
+    color: var(--azul);
+}
+
+.user-card{
+    width: 100%;
+    border-radius: 15px;
+    height: 100px;
+}
+.user-card .bi-person {
+    font-size: 80px;
+    color: var(--azul);
+}
+.user-card .bi-journal-bookmark, .user-card .bi-inboxes-fill{
+    font-size: 60px;
+    color: var(--azul);
+}
+.user-card span{
+    font-family: var(--Gochi);
+    font-size: 20px;
+    color: var(--placeholder);
+}
+.table-wrapper{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    /* border: 15px; */
+    background: #fff;
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+.view-btn{
+    font-family: var(--Gochi);
+    font-size: 20px;
+    color: #fff;
+    background: var(--azul);
+    border: none;
+    border-radius: 10px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    /* padding: 1rem; */
+    border-radius: 15px;
+    font-family: var(--Gochi);
+    /* height: 80vh;
+    overflow: hidden; */
+}
+table tr:first-child{
+    border-bottom: 2px solid var(--azul);
+}
+table tr th{
+    padding: 15px 10px;
+    font-family: var(--Gochi);
+    color: var(--azul);
+    font-size: 22px;
+}
+table tr td{
+    padding: 10px 5px;
+}
+table tr:nth-child(even){
+    background: var(--input);
+}
+
+/* main  */
+
+@media screen and (max-width: 767px){
+    .navbar{
+        height: 18vh;
+    }
+    .aside{
+        height: 10vh;
+    }
+    .main{
+        height: 72vh;
+    }
+}
+
+
+/* edit book  */
+.edit-book{
+    width: 100%;
+    height: 100vh;
+}
+.edit-book-wrapper{
+    /* padding-top: 1rem; */
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.edit-book-wrapper form{
+    width: 500px;
+    height: auto;
+    background: #fff;
+    border-radius: 15px;
+}
+.edit-book-wrapper h4{
+    font-family: var(--Gluten);
+    font-size: 30px;
+    color: var(--azul);
+    position: relative;
+    z-index: 1;
+}
+.edit-book-wrapper h4::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 100px;
+    height: 24px;
+    background: url(../../icons/underline.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.edit-book-wrapper label, .edit-book-wrapper .label{
+    font-family: var(--Gochi);
+    font-size: 18px;
+    color: var(--violet);
+}
+.edit-book-wrapper input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--placeholder);
+    border-radius: 10px;
+    outline: none;
+    background: var(--input);
+    text-indent: 1rem;
+    font-family: var(--Gochi);
+    font-size: 18px;
+}
+.edit-book-wrapper input:focus{
+    border: none;
+    outline: 2px solid var(--azul);
+}
+.edit-book-wrapper input[type='file']{
+    display: none;
+}
+.edit-book-wrapper .img-input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--placeholder);
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-indent: 1rem;
+    color: var(--placeholder);
+}
+.edit-book-wrapper textarea{
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: 2px solid var(--placeholder);
+    background: var(--input);
+    border-radius: 10px;
+    outline: none;
+    font-family: var(--Gochi);
+    font-size: 18px;
+    text-indent: 1rem;
+    padding: 5px;
+}
+.edit-book-wrapper textarea:focus{
+    border: none;
+    outline: 2px solid var(--azul);
+}
+.edit-book-wrapper button:last-child{
+    width: 130px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: var(--azul);
+    color: #fff;
+    font-family: var(--Gochi);
+    font-size: 18px;
+}
+.edit-book-wrapper select{
+    width: 100%;
+    height: 40px !important;
+    border: 2px solid var(--placeholder);
+    border-radius: 10px;
+    outline: none;
+    background: var(--input);
+    text-indent: 1rem;
+    font-family: var(--Gochi);
+    font-size: 18px;
+}
+.edit-book-wrapper select option{
+    color: var(--placeholder);
+    font-family: var(--Gochi);
+    color: var(--placeholder);
+}
+.edit-book-wrapper .backbtn{
+    width: 100px;
+    height: 45px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    background: var(--input);
+    font-family: var(--Gochi);
+    font-size: 18px;
+    color: var(--placeholder);
+}
+.edit-book-wrapper input::placeholder{
+    font-size: 18px;
+    color: var(--placeholder);
+    font-family: var(--Gochi);
+}
+/* end of edit book  */

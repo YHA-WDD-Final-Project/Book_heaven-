@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500&family=Gochi+Hand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* color  */
+    --oxford-blue: #011638ff;
+    --silver: #cdcdcdff;
+    --honeydew: #dff8ebff;
+    --azul: #016fb9ff;
+    --yellow: #F9C54A ;
+    --gradient-blue: rgba(9,115 ,242 , 0.3);
+    --violet:#BC5BF8;
+    --placeholder :  #999;
+    --black: #333;
+    --input: #efefef;
+    --red : #FD3B3B;
+    --light-red: #FED7D7;
+
+    /* font family  */
+    --Gluten:  'Gluten', sans-serif;
+    --Gochi:  'Gochi Hand', sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background: url(../../icons/bgcurve2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .image{
+    width: 100%;
+    height: 100vh;   
+}
+.content{
+    width: 100%;
+    height: 100vh;
+} */
+
+img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+form{
+    width: 350px;
+    height: auto;
+    padding: 1rem;
+}
+
+h4{
+    font-family: var(--Gluten);
+    font-size: 22px !important;
+    font-weight: 500;
+    color: var(--azul) !important;
+}
+
+p{
+    font-family: var(--Gochi);
+    font-size: 18px;
+    color: var(--placeholder);
+}
+
+form input{
+    width: 100%;
+    height: 50px;
+    padding: .9rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: var(--Gochi);
+    color: var(--black);
+}
+form input:focus{
+    outline: 2px solid var(--azul);
+}
+form input::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--placeholder);
+    font-family: var(--Gochi);
+}
+
+form textarea{
+    width: 100%;
+    height: 170px;
+    resize: none;
+    padding: .9rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-family: var(--Gochi);
+}
+form textarea::placeholder{
+    font-size: 18px;
+    font-family: var(--Gochi);
+    color: var(--placeholder);
+}
+form textarea:focus{
+    outline: 2px solid var(--azul);
+}
+.btn-gp{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.btn-gp a{
+    text-decoration: none;
+    color: var(--placeholder);
+    font-family: var(--Gochi);
+    font-size: 22px;
+    font-weight: 500;
+}
+.btn-gp a:hover{
+    color: var(--red);
+}
+.submit{
+    border: none;
+    background: none;
+    width: auto;
+    font-size: 28px;
+    font-family: var(--Gochi);
+    color: var(--yellow);
+    border: none;
+    background: none;
+    z-index: 999;
+    position: relative;
+}
+.submit::before{
+    content: "";
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: -1;
+    background: url(../../icons/paint.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.submit:hover{
+    transform: scale(1.05);
+}
